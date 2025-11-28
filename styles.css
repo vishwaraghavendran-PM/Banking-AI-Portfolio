@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+header, section, footer {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  text-align: left;
+}
+
+a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 0.9em;
+  color: #666;
+}
