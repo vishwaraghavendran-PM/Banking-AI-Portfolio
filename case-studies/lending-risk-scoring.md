@@ -59,7 +59,7 @@ Inputs → Feature Engineering → ML Model → Decision Engine → Approval / D
 
 Shadow mode → Limited segment rollout → Cross-product expansion → Full adoption with monitoring
 
-# Case Study: Improving Credit Risk Decisions
+# Improving Credit Risk Decisions
 
 - **Context:** High false approvals were increasing charge-offs.  
 - **Problem:** Precision at the operating threshold was too low for compliance.  
