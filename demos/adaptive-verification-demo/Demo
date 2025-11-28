@@ -1,0 +1,24 @@
+
+---
+
+# ✅ **8. `demos/scoring-simulation.ipynb` (Notebook as plain text)**  
+You can save this as `.ipynb` in Jupyter; GitHub will render it.
+
+```json
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "source": ["# Lending Risk Scoring Simulation\nThis notebook simulates threshold logic for a hypothetical ML-based risk scoring system."]
+  },
+  {
+   "cell_type": "code",
+   "source": [
+     "import numpy as np\nimport pandas as pd\n\n# simulate probability of default scores\nnp.random.seed(42)\nscores = np.random.beta(2, 10, 500)\ndf = pd.DataFrame({'pd_score': scores})\n\n# thresholds\nLOW = 0.02\nHIGH = 0.08\n\ndef apply_decision(score):\n    if score < LOW:\n        return 'approve'\n    elif score > HIGH:\n        return 'decline'\n    else:\n        return 'manual_review'\n\n df['decision'] = df['pd_score'].apply(apply_decision)\ndf.head()"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
